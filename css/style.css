@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffeaa7;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .search {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .search .searchInput {
+  width: 80%;
+  max-width: 400px;
+  height: 80px;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 1em;
+  color: #2f3542;
+  font-weight: 700;
+}
+
+.app .search .searchInput::-webkit-input-placeholder {
+  color: #2f3542;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app .search .searchInput:-ms-input-placeholder {
+  color: #2f3542;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app .search .searchInput::-ms-input-placeholder {
+  color: #2f3542;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app .search .searchInput::placeholder {
+  color: #2f3542;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app .search .searchBtn {
+  padding: 1em;
+  color: #2f3542;
+  text-align: center;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+}
+
+.app .root {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.app .root .mainInfo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #2f3542;
+  font-weight: 700;
+}
+
+.app .root .mainInfo .cityName {
+  width: 100%;
+  text-align: center;
+}
+
+.app .root .mainInfo .cityName h2 {
+  font-size: 40px;
+}
+
+.app .root .mainInfo .mainTemp {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .root .mainInfo .mainTemp .mainTemp-temp {
+  font-size: 50px;
+}
+
+.app .root .mainInfo .mainTemp .mainTemp-weather {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.app .root .wrapper {
+  width: 100%;
+  background: #2f3542;
+  position: relative;
+  max-height: 120px;
+  height: 50%;
+  color: #f1f2f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.app .root .wrapper .wrapper-border {
+  -webkit-clip-path: polygon(0 0, 50% 35%, 100% 70%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 50% 35%, 100% 70%, 100% 100%, 0 100%);
+  background: #2f3542;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.app .root .wrapper .temps {
+  width: 100%;
+  text-align: center;
+}
+
+.app .root .wrapper .temps .temp {
+  display: inline-block;
+  margin: 0 20px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg: #ffeaa7;
+$layer: #5352ed;
+$font:#f1f2f6;
+$dark: #2f3542;
+$orange:#ffa502;
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bg;
+}
+.app {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .search {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .searchInput {
+            width: 80%;
+            max-width: 400px;
+            height: 80px;
+            background: transparent;
+            outline: 0;
+            border: 0;
+            font-size: 20px;
+            box-shadow: none;
+            padding: 0 1em;
+            color: $dark;
+            font-weight: 700;
+            &::placeholder {
+                color: $dark;
+                font-weight: 700;
+                font-family: 'Montserrat', sans-serif;
+
+            }
+        }
+        .searchBtn {
+            padding: 1em;
+            color: $dark;
+            text-align: center;
+            background: transparent;
+            outline: 0;
+            border: 0;
+            font-size: 20px;
+        }
+    }
+    .root {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        .mainInfo {
+            width: 100%;
+            height:100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: $dark;
+            font-weight: 700;
+            .cityName {
+                width: 100%;
+                text-align: center;
+                h2 {
+                    font-size: 40px;
+                }
+            }
+            .mainTemp {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .mainTemp-temp {
+                    font-size: 50px;
+                }
+                .mainTemp-weather {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .wrapper {
+            width: 100%;
+            background: $dark;
+            position: relative;
+            max-height: 120px;
+            height: 50%;
+            color: $font;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1em;
+            font-weight: 700;
+            flex-direction: column;
+            text-align: center;
+            .wrapper-border {
+                clip-path: polygon(0 0, 50% 35%, 100% 70%, 100% 100%, 0 100%);
+                background: $dark;
+                width: 100%;
+                height: 60px;
+                position: absolute;
+                left: 0;
+                transform: translateY(-80px);
+            }
+
+            .temps {
+                width: 100%;
+                text-align: center;
+                .temp {
+                    display: inline-block;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
