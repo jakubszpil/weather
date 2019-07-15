@@ -150,8 +150,3 @@ searchInput.addEventListener("keydown",(e)=>{
     }
 })
 
-searchInput.addEventListener("input",()=>{
-    if(searchInput.value!=null) getInfo();
-});
-
-
