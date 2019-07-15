@@ -70,7 +70,7 @@ class Info {
                     <div class="temp maxTemp">Max: ${this.temp_max} &#8451;</div>
                 </div>
                 <div class="pressure">Current pressure: ${this.pressure} hPa</div>
-                <div class="wind">Wind speed: ${this.wind.speed*3.6} km/h</div>
+                <div class="wind">Wind speed: ${(this.wind.speed*3.6).toFixed(2)} km/h</div>
             </div>
             `
         )
