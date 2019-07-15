@@ -65,7 +65,6 @@ class Info {
             </div>
             
             <div class="wrapper">
-                <div class="wrapper-border"></div>
                 <div class="temps">
                     <div class="temp minTemp">Min: ${this.temp_min} &#8451;</div>
                     <div class="temp maxTemp">Max: ${this.temp_max} &#8451;</div>
